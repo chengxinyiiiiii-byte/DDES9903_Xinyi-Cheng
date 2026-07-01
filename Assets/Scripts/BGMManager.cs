@@ -6,6 +6,9 @@ public class BGMManager : MonoBehaviour
     public AudioSource bgm1;
     public AudioSource bgm2;
 
+    public float bgm1Volume = 0.35f;
+    public float bgm2Volume = 0.22f;
+
     public float fadeDuration = 2f;
 
     void Start()
@@ -23,7 +26,7 @@ public class BGMManager : MonoBehaviour
 
         bgm1.loop = true;
         bgm1.Play();
-        StartCoroutine(FadeIn(bgm1));
+        StartCoroutine(FadeIn(bgm1, bgm1Volume));
     }
 
     public void SwitchToBGM2()
@@ -40,22 +43,22 @@ public class BGMManager : MonoBehaviour
         {
             bgm2.loop = true;
             bgm2.Play();
-            yield return StartCoroutine(FadeIn(bgm2));
+            yield return StartCoroutine(FadeIn(bgm2, bgm2Volume));
         }
     }
 
-    IEnumerator FadeIn(AudioSource audio)
+    IEnumerator FadeIn(AudioSource audio, float targetVolume)
     {
         float time = 0f;
 
         while (time < fadeDuration)
         {
             time += Time.deltaTime;
-            audio.volume = Mathf.Lerp(0f, 1f, time / fadeDuration);
+            audio.volume = Mathf.Lerp(0f, targetVolume, time / fadeDuration);
             yield return null;
         }
 
-        audio.volume = 1f;
+        audio.volume = targetVolume;
     }
 
     IEnumerator FadeOut(AudioSource audio)
