@@ -5,7 +5,11 @@ public class IntroManager : MonoBehaviour
 {
     public AudioSource broadcast;
     public AudioSource narration;
+
     public MonoBehaviour playerController;
+
+    // Drag your BGMManager here
+    public BGMManager bgmManager;
 
     void Start()
     {
@@ -31,5 +35,11 @@ public class IntroManager : MonoBehaviour
 
         // Enable player movement
         playerController.enabled = true;
+
+        // Start BGM 1 (Searching Music)
+        if (bgmManager != null)
+        {
+            bgmManager.PlayBGM1();
+        }
     }
 }
