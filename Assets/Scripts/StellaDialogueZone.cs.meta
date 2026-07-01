@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3da84754413f044948f15257b5072b34
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - promptText: {instanceID: 0}
+  - dialogueAudio: {instanceID: 0}
+  - stellaFollowScript: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

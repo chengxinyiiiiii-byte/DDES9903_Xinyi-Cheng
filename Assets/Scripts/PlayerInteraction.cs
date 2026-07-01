@@ -4,7 +4,7 @@ using TMPro;
 public class PlayerInteraction : MonoBehaviour
 {
     public Camera playerCamera;
-    public float interactionDistance = 3f;
+    public float interactionDistance = 5f;
     public GameObject promptTextObject;
     public TMP_Text promptText;
 
@@ -31,7 +31,7 @@ public class PlayerInteraction : MonoBehaviour
                     promptTextObject.SetActive(true);
                     promptText.text = message;
 
-                    if (Input.GetKeyDown(KeyCode.E))
+                    if (Input.GetKeyDown(interactable.GetInteractKey()))
                     {
                         interactable.Interact();
                         promptTextObject.SetActive(false);
