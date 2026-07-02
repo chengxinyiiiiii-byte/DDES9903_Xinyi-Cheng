@@ -22808,18 +22808,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7343946581797828699, guid: 8c69a23e51d16d242930a94173d27c5e, type: 3}
   m_PrefabInstance: {fileID: 1950759170}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &357405684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357405682}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad89ebea62fa84afb92da2fb8412811a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StellaFollowPlayer
 --- !u!1 &357435251
 GameObject:
   m_ObjectHideFlags: 0
@@ -96854,28 +96842,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1498511345}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1501513547 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1534723728633843283, guid: df63664dbdd376b4298726771ab129fa, type: 3}
-  m_PrefabInstance: {fileID: 1735571449}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1501513555 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5477663902695651912, guid: df63664dbdd376b4298726771ab129fa, type: 3}
   m_PrefabInstance: {fileID: 1735571449}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1501513556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501513547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c3cfb6a7311b4a18a1be4b52ce41564, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
 --- !u!1 &1501673106
 GameObject:
   m_ObjectHideFlags: 0
@@ -111691,10 +111662,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5477663902695651912, guid: df63664dbdd376b4298726771ab129fa, type: 3}
       insertIndex: 6
       addedObject: {fileID: 204623570}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1534723728633843283, guid: df63664dbdd376b4298726771ab129fa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1501513556}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df63664dbdd376b4298726771ab129fa, type: 3}
 --- !u!1 &1737414520
 GameObject:
@@ -111839,8 +111807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IntroManager
   broadcast: {fileID: 2069866458}
   narration: {fileID: 1162056051}
-  invisibleWall: {fileID: 0}
-  bgmManager: {fileID: 0}
+  invisibleWall: {fileID: 1672127394}
+  bgmManager: {fileID: 230416987}
 --- !u!4 &1738837257
 Transform:
   m_ObjectHideFlags: 0
@@ -120478,10 +120446,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fba6c58fba5945a18a4d5366ae88963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HairClipPickup
-  promptText: {fileID: 0}
-  hairClipWorld: {fileID: 0}
-  hairClipHand: {fileID: 0}
-  narrationAudio: {fileID: 0}
+  promptText: {fileID: 323879622}
+  hairClipWorld: {fileID: 1864270808}
+  hairClipHand: {fileID: 204623566}
+  narrationAudio: {fileID: 1162056051}
 --- !u!65 &1864270810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -125585,10 +125553,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7343946581797828699, guid: 8c69a23e51d16d242930a94173d27c5e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 804136851}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7343946581797828697, guid: 8c69a23e51d16d242930a94173d27c5e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 357405684}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c69a23e51d16d242930a94173d27c5e, type: 3}
 --- !u!1 &1954491296
 GameObject:
