@@ -83647,9 +83647,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7343946581797828697, guid: 8c69a23e51d16d242930a94173d27c5e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1309484047}
-    - targetCorrespondingSourceObject: {fileID: 7343946581797828697, guid: 8c69a23e51d16d242930a94173d27c5e, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1309484048}
   m_SourcePrefab: {fileID: 100100000, guid: 8c69a23e51d16d242930a94173d27c5e, type: 3}
 --- !u!4 &1309484044 stripped
@@ -83657,18 +83654,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7343946581797828699, guid: 8c69a23e51d16d242930a94173d27c5e, type: 3}
   m_PrefabInstance: {fileID: 1309484043}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1309484047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664343713}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad89ebea62fa84afb92da2fb8412811a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StellaFollowPlayer
 --- !u!114 &1309484048
 MonoBehaviour:
   m_ObjectHideFlags: 0
