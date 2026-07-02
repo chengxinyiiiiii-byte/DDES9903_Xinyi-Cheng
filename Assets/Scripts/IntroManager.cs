@@ -6,15 +6,19 @@ public class IntroManager : MonoBehaviour
     public AudioSource broadcast;
     public AudioSource narration;
 
-    public MonoBehaviour playerController;
+    // Drag your invisible wall here
+    public GameObject invisibleWall;
 
     // Drag your BGMManager here
     public BGMManager bgmManager;
 
     void Start()
     {
-        // Disable player movement
-        playerController.enabled = false;
+        // Make sure the wall is active
+        if (invisibleWall != null)
+        {
+            invisibleWall.SetActive(true);
+        }
 
         // Play the park announcement
         broadcast.Play();
@@ -30,13 +34,16 @@ public class IntroManager : MonoBehaviour
         // Play the player's narration
         narration.Play();
 
-        // Wait for the narration (9 seconds)
+        // Wait for the narration
         yield return new WaitForSeconds(9f);
 
-        // Enable player movement
-        playerController.enabled = true;
+        // Remove the invisible wall
+        if (invisibleWall != null)
+        {
+            invisibleWall.SetActive(false);
+        }
 
-        // Start BGM 1 (Searching Music)
+        // Start searching BGM
         if (bgmManager != null)
         {
             bgmManager.PlayBGM1();
